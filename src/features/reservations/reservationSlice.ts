@@ -1,7 +1,4 @@
-import {
-  createSlice,
-  type PayloadAction,
-} from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
 import seatsData from "../../data/seats.json";
 import type { Seat, SeatCategory } from "../../types";
@@ -33,15 +30,11 @@ const reservationSlice = createSlice({
   initialState,
 
   reducers: {
-    initializeShowtime: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+    initializeShowtime: (state, action: PayloadAction<string>) => {
       const showtimeId = action.payload;
 
       if (!state.seatsByShowtime[showtimeId]) {
-        state.seatsByShowtime[showtimeId] =
-          getInitialSeats();
+        state.seatsByShowtime[showtimeId] = getInitialSeats();
 
         storage.setSeats(state.seatsByShowtime);
       }
@@ -53,24 +46,17 @@ const reservationSlice = createSlice({
         showtimeId: string;
         seatId: string;
         userId: string;
-      }>
+      }>,
     ) => {
-      const {
-        showtimeId,
-        seatId,
-        userId,
-      } = action.payload;
+      const { showtimeId, seatId, userId } = action.payload;
 
-      const seats =
-        state.seatsByShowtime[showtimeId];
+      const seats = state.seatsByShowtime[showtimeId];
 
       if (!seats) {
         return;
       }
 
-      const seat = seats.find(
-        (item) => item.id === seatId
-      );
+      const seat = seats.find((item) => item.id === seatId);
 
       if (!seat) {
         return;
@@ -82,8 +68,7 @@ const reservationSlice = createSlice({
 
       seat.status = "HELD";
       seat.heldBy = userId;
-      seat.holdExpiresAt =
-        Date.now() + HOLD_DURATION;
+      seat.holdExpiresAt = Date.now() + HOLD_DURATION;
 
       storage.setSeats(state.seatsByShowtime);
     },
@@ -94,33 +79,23 @@ const reservationSlice = createSlice({
         showtimeId: string;
         seatId: string;
         userId: string;
-      }>
+      }>,
     ) => {
-      const {
-        showtimeId,
-        seatId,
-        userId,
-      } = action.payload;
+      const { showtimeId, seatId, userId } = action.payload;
 
-      const seats =
-        state.seatsByShowtime[showtimeId];
+      const seats = state.seatsByShowtime[showtimeId];
 
       if (!seats) {
         return;
       }
 
-      const seat = seats.find(
-        (item) => item.id === seatId
-      );
+      const seat = seats.find((item) => item.id === seatId);
 
       if (!seat) {
         return;
       }
 
-      if (
-        seat.status !== "HELD" ||
-        seat.heldBy !== userId
-      ) {
+      if (seat.status !== "HELD" || seat.heldBy !== userId) {
         return;
       }
 
@@ -131,14 +106,10 @@ const reservationSlice = createSlice({
       storage.setSeats(state.seatsByShowtime);
     },
 
-    releaseExpiredSeats: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+    releaseExpiredSeats: (state, action: PayloadAction<string>) => {
       const showtimeId = action.payload;
 
-      const seats =
-        state.seatsByShowtime[showtimeId];
+      const seats = state.seatsByShowtime[showtimeId];
 
       if (!seats) {
         return;
@@ -167,16 +138,11 @@ const reservationSlice = createSlice({
         showtimeId: string;
         seatIds: string[];
         userId: string;
-      }>
+      }>,
     ) => {
-      const {
-        showtimeId,
-        seatIds,
-        userId,
-      } = action.payload;
+      const { showtimeId, seatIds, userId } = action.payload;
 
-      const seats =
-        state.seatsByShowtime[showtimeId];
+      const seats = state.seatsByShowtime[showtimeId];
 
       if (!seats) {
         return;
@@ -196,6 +162,32 @@ const reservationSlice = createSlice({
 
       storage.setSeats(state.seatsByShowtime);
     },
+    releaseBookedSeats: (
+  state,
+  action: PayloadAction<{
+    showtimeId: string;
+    seatIds: string[];
+  }>
+) => {
+  const { showtimeId, seatIds } = action.payload;
+
+  const seats = state.seatsByShowtime[showtimeId];
+
+  if (!seats) return;
+
+  seats.forEach((seat) => {
+    if (
+      seatIds.includes(seat.id) &&
+      seat.status === "BOOKED"
+    ) {
+      seat.status = "AVAILABLE";
+      seat.holdExpiresAt = null;
+      seat.heldBy = null;
+    }
+  });
+
+  storage.setSeats(state.seatsByShowtime);
+},
   },
 });
 
@@ -205,6 +197,7 @@ export const {
   releaseSeat,
   releaseExpiredSeats,
   bookSeats,
+  releaseBookedSeats
 } = reservationSlice.actions;
 
 export default reservationSlice.reducer;

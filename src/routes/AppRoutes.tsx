@@ -6,7 +6,7 @@ import SeatSelection from "../pages/SeatSelection";
 import Payment from "../pages/Payment";
 import Success from "../pages/Success";
 import Failure from "../pages/Failure";
-
+import BookingHistory from "../pages/BookingHistory";
 import ProtectedRoute from "../components/ProtectedRoute";
 
 function AppRoutes() {
@@ -17,36 +17,19 @@ function AppRoutes() {
       <Route element={<ProtectedRoute />}>
         <Route path="/movies" element={<Movies />} />
 
-        <Route
-          path="/seats/:movieId/:showtimeId"
-          element={<SeatSelection />}
-        />
+        <Route path="/seats/:movieId/:showtimeId" element={<SeatSelection />} />
 
-        <Route
-          path="/payment"
-          element={<Payment />}
-        />
+        <Route path="/payment" element={<Payment />} />
 
-        <Route
-          path="/success/:bookingId"
-          element={<Success />}
-        />
+        <Route path="/success/:bookingId" element={<Success />} />
 
-        <Route
-          path="/failure"
-          element={<Failure />}
-        />
+        <Route path="/failure" element={<Failure />} />
+        <Route path="/bookings" element={<BookingHistory />} />
       </Route>
 
-      <Route
-        path="/"
-        element={<Navigate to="/movies" replace />}
-      />
+      <Route path="/" element={<Navigate to="/movies" replace />} />
 
-      <Route
-        path="*"
-        element={<Navigate to="/movies" replace />}
-      />
+      <Route path="*" element={<Navigate to="/movies" replace />} />
     </Routes>
   );
 }
