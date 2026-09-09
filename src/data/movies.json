@@ -1,0 +1,82 @@
+[
+  {
+    "id": "movie-1",
+    "title": "Avengers: Endgame",
+    "genre": "Action, Adventure",
+    "duration": "3h 2m",
+    "language": "English",
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+    "showtimes": [
+      {
+        "id": "show-1",
+        "time": "10:30 AM",
+        "date": "2026-09-10"
+      },
+      {
+        "id": "show-2",
+        "time": "06:30 PM",
+        "date": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "id": "movie-2",
+    "title": "Interstellar",
+    "genre": "Sci-Fi, Drama",
+    "duration": "2h 49m",
+    "language": "English",
+    "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1",
+    "showtimes": [
+      {
+        "id": "show-3",
+        "time": "01:00 PM",
+        "date": "2026-09-10"
+      },
+      {
+        "id": "show-4",
+        "time": "09:00 PM",
+        "date": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "id": "movie-3",
+    "title": "The Dark Knight",
+    "genre": "Action, Crime",
+    "duration": "2h 32m",
+    "language": "English",
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c",
+    "showtimes": [
+      {
+        "id": "show-5",
+        "time": "11:00 AM",
+        "date": "2026-09-10"
+      },
+      {
+        "id": "show-6",
+        "time": "07:30 PM",
+        "date": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "id": "movie-4",
+    "title": "Inception",
+    "genre": "Sci-Fi, Thriller",
+    "duration": "2h 28m",
+    "language": "English",
+    "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+    "showtimes": [
+      {
+        "id": "show-7",
+        "time": "03:30 PM",
+        "date": "2026-09-10"
+      },
+      {
+        "id": "show-8",
+        "time": "10:00 PM",
+        "date": "2026-09-10"
+      }
+    ]
+  }
+]
