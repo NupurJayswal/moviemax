@@ -1,0 +1,406 @@
+[
+  {
+    "id": "A1",
+    "row": "A",
+    "number": 1,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A2",
+    "row": "A",
+    "number": 2,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A3",
+    "row": "A",
+    "number": 3,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A4",
+    "row": "A",
+    "number": 4,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A5",
+    "row": "A",
+    "number": 5,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A6",
+    "row": "A",
+    "number": 6,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A7",
+    "row": "A",
+    "number": 7,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "A8",
+    "row": "A",
+    "number": 8,
+    "category": "Premium",
+    "price": 300,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+
+  {
+    "id": "B1",
+    "row": "B",
+    "number": 1,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B2",
+    "row": "B",
+    "number": 2,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B3",
+    "row": "B",
+    "number": 3,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B4",
+    "row": "B",
+    "number": 4,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B5",
+    "row": "B",
+    "number": 5,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B6",
+    "row": "B",
+    "number": 6,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B7",
+    "row": "B",
+    "number": 7,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "B8",
+    "row": "B",
+    "number": 8,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+
+  {
+    "id": "C1",
+    "row": "C",
+    "number": 1,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C2",
+    "row": "C",
+    "number": 2,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C3",
+    "row": "C",
+    "number": 3,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C4",
+    "row": "C",
+    "number": 4,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C5",
+    "row": "C",
+    "number": 5,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C6",
+    "row": "C",
+    "number": 6,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C7",
+    "row": "C",
+    "number": 7,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "C8",
+    "row": "C",
+    "number": 8,
+    "category": "Gold",
+    "price": 220,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+
+  {
+    "id": "D1",
+    "row": "D",
+    "number": 1,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D2",
+    "row": "D",
+    "number": 2,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D3",
+    "row": "D",
+    "number": 3,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D4",
+    "row": "D",
+    "number": 4,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D5",
+    "row": "D",
+    "number": 5,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D6",
+    "row": "D",
+    "number": 6,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D7",
+    "row": "D",
+    "number": 7,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "D8",
+    "row": "D",
+    "number": 8,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+
+  {
+    "id": "E1",
+    "row": "E",
+    "number": 1,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E2",
+    "row": "E",
+    "number": 2,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E3",
+    "row": "E",
+    "number": 3,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E4",
+    "row": "E",
+    "number": 4,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E5",
+    "row": "E",
+    "number": 5,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E6",
+    "row": "E",
+    "number": 6,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E7",
+    "row": "E",
+    "number": 7,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  },
+  {
+    "id": "E8",
+    "row": "E",
+    "number": 8,
+    "category": "Silver",
+    "price": 150,
+    "status": "AVAILABLE",
+    "holdExpiresAt": null,
+    "heldBy": null
+  }
+]

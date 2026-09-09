@@ -9,6 +9,7 @@ const KEYS = {
 export const storage = {
   getUser(): User | null {
     const data = localStorage.getItem(KEYS.USER);
+
     return data ? JSON.parse(data) : null;
   },
 
@@ -22,19 +23,27 @@ export const storage = {
 
   getBookings(): Booking[] {
     const data = localStorage.getItem(KEYS.BOOKINGS);
+
     return data ? JSON.parse(data) : [];
   },
 
   setBookings(bookings: Booking[]): void {
-    localStorage.setItem(KEYS.BOOKINGS, JSON.stringify(bookings));
+    localStorage.setItem(
+      KEYS.BOOKINGS,
+      JSON.stringify(bookings)
+    );
   },
 
   getSeats(): Record<string, Seat[]> {
     const data = localStorage.getItem(KEYS.SEATS);
+
     return data ? JSON.parse(data) : {};
   },
 
   setSeats(seats: Record<string, Seat[]>): void {
-    localStorage.setItem(KEYS.SEATS, JSON.stringify(seats));
+    localStorage.setItem(
+      KEYS.SEATS,
+      JSON.stringify(seats)
+    );
   },
 };
